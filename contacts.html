@@ -61,69 +61,23 @@
             <section class="top-banner">
                 <div class="top-banner__wrapper --about">
                     <div class="h1-wrapper">
-                        <h1 class="h1">O Nas</h1>
+                        <h1 class="h1">Kontakt</h1>
                     </div>
                 </div>
             </section>
             <section class="home-about">
-                <div class="accordion">
-                    <div class="accordion-item">
-                        <button class="accordion-header">Pełna księgowość <img src="http://4.184.134.56/wp-content/themes/welltower/images/ae8344a61c0c48cdb2d6.png" class="arrow"></button>
-                        <div class="accordion-content">
-                            <p>Zespół Arkkona składa się z najlepszych ekspertów w dziedzinie pełnej księgowości dla firm, zapewniających najwyższą jakość usług pod nadzorem licencjonowanego doradcy podatkowego, co gwarantuje rzetelność, zaufanie i profesjonalne doświadczenie.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">Kadry i płace <img src="http://4.184.134.56/wp-content/themes/welltower/images/ae8344a61c0c48cdb2d6.png" class="arrow"></button>
-                        <div class="accordion-content">
-                            <p>Pomagamy w organizacji zatrudnienia oraz dalszej pracy Twoich pracowników zgodnie z polskim prawem, minimalizując koszty i ryzyko związane z zatrudnieniem oraz zapewniając najwyższą jakość obsługi.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">Wirtualne biuro <img src="http://4.184.134.56/wp-content/themes/welltower/images/ae8344a61c0c48cdb2d6.png" class="arrow"></button>
-                        <div class="accordion-content">
-                            <p>Usługa wirtualnego biura to profesjonalny adres do rejestracji firmy, kompleksowa obsługa Twojego indywidualnego biura oraz odbiór i skanowanie korespondencji. Twój domowy adres pozostanie prywatny – zarejestruj firmę w Arkkona.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">Zakładanie firmy <img src="http://4.184.134.56/wp-content/themes/welltower/images/ae8344a61c0c48cdb2d6.png" class="arrow"></button>
-                        <div class="accordion-content">
-                            <p>Planujesz otworzyć firmę? W Arkkona otrzymasz kompleksowe doradztwo, pomoc w wyborze formy prawnej oraz załatwienie wszystkich formalności w jednym miejscu – w biurze lub online.</p>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <button class="accordion-header">Pomoc w legalizacji pobytu <img src="http://4.184.134.56/wp-content/themes/welltower/images/ae8344a61c0c48cdb2d6.png" class="arrow"></button>
-                        <div class="accordion-content">
-                            <p>Oferujemy profesjonalną pomoc w procesie legalizacji pobytu w Polsce. Zapewniamy kompleksowe wsparcie na wszystkich etapach, gwarantując płynne i bezproblemowe załatwienie formalności.</p>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="h1">Biuro Rachunkowe Paweł Pytko</h1>
+                <p class="description"><i>NIP 5882516569</i></p>
+                <p class="description"><i>REGON 529237379</i></p>
+                <p class="description">
+                    <i>Tel</i>
+                    <a href="tel:880 040 656" style="text-decoration: underline;">880 040 656</a>
+                </p>
+                <p class="description">
+                    <i>Tel</i>
+                    <a href="mailto:aarkkona.pp@wp.pl" style="text-decoration: underline;">aarkkona.pp@wp.pl</a>
+                </p>
             </section>
-            <script>
-                document.addEventListener("DOMContentLoaded", function() {
-                    const headers = document.querySelectorAll(".accordion-header");
-
-                    headers.forEach(header => {
-                        header.addEventListener("click", function() {
-                            const parent = this.parentElement;
-                            const content = parent.querySelector(".accordion-content");
-
-                            // Закрываем все аккордеоны перед открытием нового
-                            document.querySelectorAll(".accordion-item").forEach(item => {
-                                if (item !== parent) {
-                                    item.classList.remove("active");
-                                    item.querySelector(".accordion-content").style.display = "none";
-                                }
-                            });
-
-                            // Переключаем состояние текущего
-                            const isActive = parent.classList.contains("active");
-                            parent.classList.toggle("active", !isActive);
-                            content.style.display = isActive ? "none" : "block";
-                        });
-                    });
-                });
-            </script>
         </section>
         <footer class="footer">
             <div class="footer__top">
